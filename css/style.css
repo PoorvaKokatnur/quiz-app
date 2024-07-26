@@ -1,0 +1,131 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(214, 246, 244);
+}
+h1{
+    font-size: 100px;
+    margin-top:5px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#quiz-container{
+    max-width: 600px;
+    margin:auto;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(53, 158, 207);
+    color:#fff;
+}
+
+#question-container{
+    font-size:30px;
+    margin-bottom: 20px;
+
+}
+button{
+padding:15px;
+cursor: pointer;
+border:none;
+border-radius: 8px;
+font-size:30px;
+}
+
+#next-btn, #prev-btn{
+    display: inline;
+    margin:15px auto;
+}
+#submit-btn{
+    display: block;
+    margin:15px auto;
+
+}
+#next-btn, #prev-btn{
+    background-color: rgb(82, 244, 125);
+    color:#fff;
+
+}
+
+#submit-btn{
+    background-color: rgb(195, 243, 62);
+}
+
+#next-btn:hover{
+background-color: rgb(3, 206, 17);
+}
+
+#submit-btn:hover{
+    background-color: rgb(141, 191, 4);
+}
+#prev-btn:hover{
+    background-color: rgb(3, 206, 17);
+}
+
+.option-label{
+    box-sizing: border-box;
+    width:50px;
+    height:50px;
+    padding:10px;
+    line-height: 31px;
+    font-weight: bold;
+    color:#fff;
+    font-size:25px;
+    border:1px solid #ddd;
+    border-radius:50%;
+    margin-right: 10px;
+    
+}
+
+.quiz-option{
+    box-sizing: border-box;
+    flex:1;
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(53, 158, 207);
+    color:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-top:10px;
+    font-size: 25px;
+    width: calc(100%-60px);
+}
+
+.quiz-option:hover{
+    background-color: rgb(39, 39, 245);
+}
+
+.quiz-card{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.quiz-option.selected{
+    background-color: rgb(60, 60, 60);
+    color:#fff;
+}
+
+#score-container{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top:20px;
+    color:#000;
+
+}
+
+#timer{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px auto;
+    width:80px;
+    height:80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: rgb(53, 207, 92);
+    color:#fff;
+}
